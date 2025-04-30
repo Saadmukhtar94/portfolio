@@ -3,6 +3,12 @@
     margin: 0;
     box-sizing: border-box;
 }
+#Hero-Img{
+  
+    filter: drop-shadow(10px 10px 10px );
+  }
+  
+ 
 #about{
     min-height: 100vh;
     padding-top: 10%;
@@ -65,11 +71,11 @@
  #bootstrap-span{
   color: rgb(74, 17, 128);
  }
- .card svg {
+ .cardsocial svg {
   height: 25px;
 }
 
-.card {
+.cardsocial {
   position: relative;
   display: flex;
   align-items: center;
@@ -82,7 +88,7 @@
   width: 200px;
 }
 
-.card::before, .card::after {
+.cardsocial::before, .cardsocial::after {
   position: absolute;
   display: flex;
   align-items: center;
@@ -92,40 +98,40 @@
   z-index: 1;
 }
 
-.card::before {
+.cardsocial::before {
   content: "";
   left: 0;
   justify-content: flex-end;
   background-color: #4d60b6;
 }
 
-.card::after {
+.cardsocial::after {
   content: "";
   right: 0;
   justify-content: flex-start;
   background-color: #4453a6;
 }
 
-.card:hover {
+.cardsocial:hover {
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
 }
 
-.card:hover span {
+.cardsocial:hover span {
   opacity: 0;
   z-index: -3;
 }
 
-.card:hover::before {
+.cardsocial:hover::before {
   opacity: 0.5;
   transform: translateY(-100%);
 }
 
-.card:hover::after {
+.cardsocial:hover::after {
   opacity: 0.5;
   transform: translateY(100%);
 }
 
-.card span {
+.cardsocial span {
   position: absolute;
   display: flex;
   align-items: center;
@@ -141,7 +147,7 @@
   z-index: 2;
 }
 
-.card .social-link {
+.cardsocial .social-link {
   position: relative;
   display: flex;
   align-items: center;
@@ -154,12 +160,12 @@
   transition: 0.25s;
 }
 
-.card .social-link svg {
+/* .cardsocial .social-link svg {
   text-shadow: 1px 1px rgba(31, 74, 121, 0.7);
   transform: scale(1);
-}
+} */
 
-.card .social-link:hover {
+.cardsocial .social-link:hover {
   background-color: rgba(249, 244, 255, 0.774);
   animation: bounce_613 0.4s linear;
 }
@@ -180,57 +186,81 @@
   100% {
     transform: scale(1);
   }}
-  #projectContainer{
+   #projectContainer{
     min-height: 100vh;
+    
     padding-top: 10%;
   }
-  .projects-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    height: auto;
-  }
-  
-  .project-card {
-    background: #ffffff;
-    border-radius: 12px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    width: 300px;
-    text-align: center;
-    /* padding: 20px; */
-    transition: transform 0.3s;
-  }
-  
-  .project-card:hover {
-    transform: translateY(-15px);
-  }
-  
-  .project-image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-  
-  .buttons {
-    margin-top: 15px;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-  }
-  
-  .btn {
-    padding: 8px 16px;
-    background-color: #0070f3;
-    color: white;
-    border-radius: 6px;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background 0.3s;
-  }
-  
-  .btn:hover {
-    background-color: #005bb5;
-  }
-  
+ /* From Uiverse.io by mrhyddenn */ 
+.containerCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card_box {
+  width: 250px;
+  height: 350px;
+  border-radius: 20px;
+  background: linear-gradient(170deg, rgba(224, 217, 217, 0.623) 0%, rgb(115, 113, 223) 100%);
+  /* background-image: url("/images/Travelli.JPG");
+  background-repeat: no-repeat; */
+  position: relative;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.55);
+  cursor: pointer;
+  transition: all .3s;
+}
+
+.card_box:hover {
+  transform: scale(0.9);
+}
+
+.card_box span {
+  position: absolute;
+  overflow: hidden;
+  width: 150px;
+  height: 150px;
+  top: -10px;
+  left: -10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#card_boxSpan::before {
+  content: 'Live';
+  position: absolute;
+  width: 150%;
+  height: 40px;
+  background-image: linear-gradient(45deg, #656575 0%, #2a8ce7  51%, #424249  100%);
+  transform: rotate(-45deg) translateY(-20px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.23);
+}
+
+#card_boxSpan::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  bottom: 0;
+  left: 0;
+  height: 10px;
+  z-index: -1;
+  box-shadow: 140px -140px #cc3f47;
+  background-image: linear-gradient(45deg, #FF512F 0%, #F09819  51%, #FF512F  100%);
+}
+#card_boxBtn{
+  display: flex;
+  justify-content: center;
+align-items: center;
+gap: 20px;
+padding-top: 10%;}
+#card_boxDescription{
+  padding-top: 50%;
+}

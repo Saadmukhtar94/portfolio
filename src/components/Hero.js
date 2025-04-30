@@ -6,13 +6,14 @@ export default function Page() {
   return (
     <div className=''>
         <div className="row mt-5 h-auto container mx-3">
-            <div className="col-md-6 mt-5" id='Hero-Img'>
+            <div className="col-md-6 " id='Hero-Img'>
             <Image
-      src="/images/Hero-Img.jpeg"
+      src="/images/Hero-Imgnew.png"
       width={500}
       height={500}
       alt="Saad Mukhtar"
-      className=''
+      className='Hero-Img'
+      id='Hero-Img'
     />
             </div>
             <div className="col-md-6 d-flex flex-column justify-content-center align-items-center gap-2 mt-5">
