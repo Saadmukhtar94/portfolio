@@ -3,11 +3,20 @@
     margin: 0;
     box-sizing: border-box;
 }
+#hero{
+  min-height: 100vh;
+}
+#about{
+  min-height: 100vh;background-color: #012a4a;
+  color: #ECEFCA;
+}
 #Hero-Img{
   
     filter: drop-shadow(10px 10px 10px );
   }
-  
+  #herobtn{
+    background-color: #036bb4;
+  }
  
 #about{
     min-height: 100vh;
@@ -15,6 +24,8 @@
 }
 #TechStation{
     height: auto;
+    background-color: #ECEFCA;
+    color:#01497C ;
 }
 .container {
     position: relative;
@@ -102,14 +113,14 @@
   content: "";
   left: 0;
   justify-content: flex-end;
-  background-color: #4d60b6;
+  background-color: #014F86;
 }
 
 .cardsocial::after {
   content: "";
   right: 0;
   justify-content: flex-start;
-  background-color: #4453a6;
+  background-color: #01497C;
 }
 
 .cardsocial:hover {
@@ -190,6 +201,9 @@
     min-height: 100vh;
     
     padding-top: 10%;
+    background-color:  #012a4a;
+    color: #ECEFCA;
+
   }
  /* From Uiverse.io by mrhyddenn */ 
 .containerCard {
@@ -263,4 +277,105 @@ gap: 20px;
 padding-top: 10%;}
 #card_boxDescription{
   padding-top: 50%;
+}
+#contact{
+height: 100vh;}
+.orange {
+  color: #ff7a01;
+}
+
+.form-container {
+  /* margin: 30px; */
+  background-color: rgb(48, 95, 156);
+  /* height: 50vh; */
+  /* padding: 30px; */
+  border-left: 5px solid #f18b2b;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
+}
+
+.heading {
+  display: block;
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+.form-container .form .input {
+  color: #87a4b6;
+  width: 100%;
+  background-color: #002733;
+  border: none;
+  outline: none;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  transition: all 0.2s ease-in-out;
+  border-left: 1px solid transparent;
+}
+
+.form-container .form .input:focus {
+  border-left: 5px solid #ff7a01;
+}
+
+.form-container .form .textarea {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  outline: none;
+  background-color: #013747;
+  color: #ff7a01;
+  font-weight: bold;
+  resize: none;
+  max-height: 150px;
+  margin-bottom: 20px;
+  border-left: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .textarea:focus {
+  border-left: 5px solid #ff7a01;
+}
+
+.form-container .form .button-container {
+  display: flex;
+  gap: 10px;
+}
+
+.form-container .form .button-container .send-button {
+  flex-basis: 70%;
+  background: #ff7a01;
+  padding: 10px;
+  color: #001925;
+  text-align: center;
+  font-weight: bold;
+  border: 1px solid transparent;
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .button-container .send-button:hover {
+  background: transparent;
+  border: 1px solid #ff7a01;
+  color: #ff7a01;
+}
+
+.form-container .form .button-container .reset-button-container {
+  filter: drop-shadow(1px 1px 0px #ff7a01);
+  flex-basis: 30%;
+}
+
+.form-container .form .button-container .reset-button-container .reset-button {
+  position: relative;
+  text-align: center;
+  padding: 10px;
+  color: #ff7a01;
+  font-weight: bold;
+  background: #001925;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+  transition: all 0.2s ease-in-out;
+}
+
+.form-container .form .button-container .reset-button-container .reset-button:hover {
+  background: #ff7a01;
+  color: #001925;
 }

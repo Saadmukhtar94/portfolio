@@ -61,10 +61,11 @@ export default function Page() {
   ];
 
   return (
-    <div  className="projects-container d-flex justify-content-center align-items-center  row container mx-auto " id="projectContainer">
+    <div  className="projects-container d-flex justify-content-center align-items-center  text-center row container mx-auto " id="projectContainer">
+      <h1 className='pt-5 pb-2'>Projects</h1>
       {projects.map((project, index) => (
         <div key={index} className="containerCard col-md-3">
-          
+
         <div  className="card_box mb-5" >
         {/* <span className="position-absolute top-25  start-100 translate-start badge rounded-pill bg-danger w-auto h-auto">
 {project.Technology}   
