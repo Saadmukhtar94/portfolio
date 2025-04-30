@@ -25,7 +25,7 @@ export default function RootLayout({ children }) {
         {/* Font Awesome for icons */}
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
         {/* Custom CSS */}
-        <link rel="stylesheet" href="/assets/css/style.css" />
+        {/* <link rel="stylesheet" href="/assets/css/style.css" /> */}
         {/* Favicon */}
         <link rel="icon" href="/assets/images/favicon.png" type="image/png" />
     

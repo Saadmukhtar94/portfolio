@@ -19,8 +19,8 @@ export default function Page() {
             <div className="
             // col-md-6
              d-flex flex-column justify-content-center align-items-center gap-2 mt-5">
-                <h1>"Hi, I'm Saad Mukhtar"</h1>
-                <p> "Frontend Developer | Passionate about building beautiful websites"</p>
+                <h1>&#34;Hi, I&apos;m Saad Mukhtar&#34;</h1>
+                <p> &#34;Frontend Developer | Passionate about building beautiful websites&#34;</p>
                 <div>            
               <Social/>
             </div>
