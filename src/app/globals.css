@@ -3,12 +3,33 @@
     margin: 0;
     box-sizing: border-box;
 }
+:root {
+  --primary-color: #012a4a;
+  --secondary-color: #ECEFCA;
+  --primarybackground-color: #012a4a;
+  --secondarybackground-color:var(--secondary-color);
+}
+
+#header span ,.navlinks{
+  color:   var(--primary-color);
+}
 #hero{
   min-height: 100vh;
+  
+}
+#hero h1,p {
+ 
+  color: var( --primary-color);
 }
 #about{
-  min-height: 100vh;background-color: #012a4a;
-  color: #ECEFCA;
+  min-height: 100vh;
+  /* background-color: #012a4a; */
+  background-color:var(--primarybackground-color) ;
+  color:var(--secondary-color);
+}
+#about p{
+  color:var(--secondary-color);
+
 }
 #Hero-Img{
   
@@ -24,8 +45,8 @@
 }
 #TechStation{
     height: auto;
-    background-color: #ECEFCA;
-    color:#01497C ;
+    background-color:var(--secondarybackground-color);
+    color:var(--primary-color) ;
 }
 .container {
     position: relative;
@@ -91,7 +112,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #e7e7e7;
+ background:var(--primarybackground-color);
   box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   overflow: hidden;
@@ -201,7 +222,7 @@
     min-height: 100vh;
     
     padding-top: 10%;
-    background-color:  #012a4a;
+    background-color:  var(--primarybackground-color);
     color: #ECEFCA;
 
   }
@@ -216,7 +237,7 @@
   width: 250px;
   height: 350px;
   border-radius: 20px;
-  background: linear-gradient(170deg, rgba(224, 217, 217, 0.623) 0%, rgb(115, 113, 223) 100%);
+  background: linear-gradient(170deg,var(--secondarybackground-color),var(--primarybackground-color));
   /* background-image: url("/images/Travelli.JPG");
   background-repeat: no-repeat; */
   position: relative;
@@ -246,7 +267,7 @@
   position: absolute;
   width: 150%;
   height: 40px;
-  background-image: linear-gradient(45deg, #656575 0%, #2a8ce7  51%, #424249  100%);
+  background-image: linear-gradient(45deg,var(--primarybackground-color), #2a8ce7  51%,var(--primarybackground-color));
   transform: rotate(-45deg) translateY(-20px);
   display: flex;
   align-items: center;
@@ -279,7 +300,8 @@ padding-top: 10%;}
   padding-top: 50%;
 }
 #contact{
-height: 100vh;}
+height: 100vh;
+padding-top:5%;}
 .orange {
   color: #ff7a01;
 }
@@ -289,7 +311,7 @@ height: 100vh;}
   background-color: rgb(48, 95, 156);
   /* height: 50vh; */
   /* padding: 30px; */
-  border-left: 5px solid #f18b2b;
+  border-left: 5px solid #d5d8b8;
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 20px), calc(100% - 20px) 100%, 0 100%);
 }
 
@@ -304,7 +326,7 @@ height: 100vh;}
 .form-container .form .input {
   color: #87a4b6;
   width: 100%;
-  background-color: #002733;
+  background-color:var(--primarybackground-color);
   border: none;
   outline: none;
   padding: 10px;
@@ -315,10 +337,10 @@ height: 100vh;}
 }
 
 .form-container .form .input #message:focus {
-  border-left: 5px solid #ff7a01;
+  border-left: 5px solid #ECEFCA;
 }
 
-.form-container .form #message {
+/* .form-container .form #message {
   width: 100%;
   padding: 10px;
   border: none;
@@ -331,10 +353,10 @@ height: 100vh;}
   margin-bottom: 20px;
   border-left: 1px solid transparent;
   transition: all 0.2s ease-in-out;
-}
+} */
 
-.form-container .form .textarea:focus {
-  border-left: 5px solid #ff7a01;
+.form-container #email , #message:focus {
+  border-left: 5px solid #ECEFCA;
 }
 
 .form-container .form .button-container {
@@ -368,29 +390,45 @@ height: 100vh;}
   position: relative;
   text-align: center;
   padding: 10px;
-  color: #ff7a01;
+  color: #ECEFCA;
   font-weight: bold;
-  background: #001925;
+  background: var(--primarybackground-color);
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
   transition: all 0.2s ease-in-out;
 }
 
 .form-container .form .button-container .reset-button-container .reset-button:hover {
-  background: #ff7a01;
-  color: #001925;
+  background: #ECEFCA;
+  color: var(--primarybackground-color);
 }
 #email,#message{
-  border: 2px solid #ff7a01;
-  color: #ff7a01;
+  border: 1px solid #ECEFCA;
+  color: #ECEFCA;
   font-weight: bold;
 width: 75%;  
 padding: 10px 5px;
 }
 #submit-btn{
-  background-color: #ff7a01;
+  background-color:var(--secondary-color);
   padding: 5px 10px;
   border: none;
-  color: white;
+  color: var(--primarybackground-color);
   border-radius: 5px;
   font-weight: bold;
+}
+#contactForm{
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+#footer,#footer p{
+  background-color: var(--primarybackground-color);
+  color: var(--secondary-color);
+}
+@media  (max-width :767px){
+  #contactForm{
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 0%;
+  }
 }

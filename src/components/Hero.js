@@ -19,10 +19,17 @@ export default function Page() {
             <div className="
             // col-md-6
              d-flex flex-column justify-content-center align-items-center gap-2 mt-5">
-              {/* <Image src="
-              "/> */}
+              <Image src="/images/chatgptbg.png"
+              width={250}
+              height={250}
+              id='Hero-Img'
+              className='rounded'
+              alt='Saad Mukhtar'/>
                 <h1>&#34;Hi, I&apos;m Saad Mukhtar&#34;</h1>
-                <p> &#34;Frontend Developer | Passionate about building beautiful websites&#34;</p>
+                {/* <p> &#34;Frontend Developer | Passionate about building beautiful websites&#34;</p> */}
+                <p> "React & Next.js Frontend Developer"
+                (Building clean, fast, modern UIs)</p>
+
                 <div>            
               <Social/>
             </div>

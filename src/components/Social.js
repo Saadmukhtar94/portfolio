@@ -11,7 +11,7 @@ export default function Page () {
          
          <Link href="/" className="list-unstyled social-link"><i className="fa-brands fa-square-instagram fs-3 "></i></Link>
          
-         <Link href="https://github.com/Saadmukhtar94" className="list-unstyled social-link"><i className="fa-brands fa-square-github fs-3 "></i></Link>     
+         <Link href="https://github.com/Saadmukhtar94" className="list-unstyled social-link" target='_blank'><i className="fa-brands fa-square-github fs-3 "></i></Link>     
 
          
         </div>

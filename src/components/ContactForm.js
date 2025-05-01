@@ -37,7 +37,7 @@ function ContactForm() {
   }
   return (
     <div id="contact" className='mt-5 '>
- <form onSubmit={handleSubmit} className=' form form-container container  w-50  py-5  d-flex justify-content-center align-items-center flex-column gap-3' >
+ <form onSubmit={handleSubmit} className=' form form-container container py-5  d-flex justify-content-center align-items-center flex-column gap-3' id='contactForm' >
                <span className="heading fs-1">Get in touch</span>
 
       <label htmlFor="email" className='text-light fs-4'>
