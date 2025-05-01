@@ -314,11 +314,11 @@ height: 100vh;}
   border-left: 1px solid transparent;
 }
 
-.form-container .form .input:focus {
+.form-container .form .input #message:focus {
   border-left: 5px solid #ff7a01;
 }
 
-.form-container .form .textarea {
+.form-container .form #message {
   width: 100%;
   padding: 10px;
   border: none;
@@ -378,4 +378,19 @@ height: 100vh;}
 .form-container .form .button-container .reset-button-container .reset-button:hover {
   background: #ff7a01;
   color: #001925;
+}
+#email,#message{
+  border: 2px solid #ff7a01;
+  color: #ff7a01;
+  font-weight: bold;
+width: 75%;  
+padding: 10px 5px;
+}
+#submit-btn{
+  background-color: #ff7a01;
+  padding: 5px 10px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  font-weight: bold;
 }

@@ -19,6 +19,8 @@ export default function Page() {
             <div className="
             // col-md-6
              d-flex flex-column justify-content-center align-items-center gap-2 mt-5">
+              {/* <Image src="
+              "/> */}
                 <h1>&#34;Hi, I&apos;m Saad Mukhtar&#34;</h1>
                 <p> &#34;Frontend Developer | Passionate about building beautiful websites&#34;</p>
                 <div>            
