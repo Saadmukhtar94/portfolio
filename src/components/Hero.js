@@ -27,7 +27,7 @@ export default function Page() {
               alt='Saad Mukhtar'/>
                 <h1>&#34;Hi, I&apos;m Saad Mukhtar&#34;</h1>
                 {/* <p> &#34;Frontend Developer | Passionate about building beautiful websites&#34;</p> */}
-                <p> "React & Next.js Frontend Developer"
+                <p> &quot;React & Next.js Frontend Developer&quot;
                 (Building clean, fast, modern UIs)</p>
 
                 <div>            
