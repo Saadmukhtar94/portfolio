@@ -56,7 +56,7 @@ function ContactForm() {
         errors={state.errors}
       />
       
-         <textarea placeholder="  Say Hello"  id="message" name="message" className="textarea   bg-secondary bg-opacity-25 "  required></textarea>
+         <textarea placeholder="  Type Your Queries"  id="message" name="message" className="textarea   bg-secondary bg-opacity-25 "  required></textarea>
 
       <ValidationError 
         prefix="Message" 
