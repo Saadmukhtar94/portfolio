@@ -46,7 +46,7 @@ export default function Page() {
     {
       title: 'Project2',
       image: '/images/Hero-Img.jpeg',
-      previewLink: 'https://travellli.netlify.app/',
+      // previewLink: 'https://travellli.netlify.app/',
   //     codeLink: 'https://github.com/Saadmukhtar94/travelli',
       Description: '"A static Dribbble clone built with HTML and CSS, replicating the layout and design of the original platform."',
     },
@@ -54,7 +54,7 @@ export default function Page() {
     {
       title: 'Project2',
       image: '/images/Hero-Img.jpeg',
-      previewLink: 'https://travellli.netlify.app/',
+      // previewLink: 'https://travellli.netlify.app/',
   //     codeLink: 'https://github.com/Saadmukhtar94/travelli',
       Description: '"A responsive  website clone built using HTML, CSS, and Bootstrap to showcase layout and styling fundamentals."',
     },
