@@ -18,7 +18,7 @@ export default function Page() {
       image: '/images/Hero-Img.jpeg',
       previewLink: 'https://b2bnett.vercel.app/dashboard/businesses/create',
       // codeLink: 'https://github.com/Saadmukhtar94/b2bnet',
-      Description: '"B2B-Net –  Integrated  a Google Map Api for  Autofill and  Google map embedding     (NextJs) ',
+      Description: '"Integrated  a Google Map Api for  Autofill and  Google map embedding     (NextJs) ',
 
     },
      {
