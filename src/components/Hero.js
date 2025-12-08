@@ -33,7 +33,12 @@ export default function Page() {
                 <div>            
               <Social/>
             </div>
-                <Link className='btn text-light' href='#projectContainer' id="herobtn">View my work</Link>
+            <div className="d-flex gap-2">
+ <Link className='btn text-light' href='#projectContainer' id="herobtn">View my work</Link>
+                                <Link className='btn text-light' href='mailto:saadmukhtar584@gmail.com' id="herobtn">Hire me.</Link>
+            </div>
+               
+
             </div>
            
         </div>
