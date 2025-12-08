@@ -21,6 +21,13 @@ export default function Page() {
       Description: '"B2B-Net –  Integrated  a Google Map Api for  Autofill and  Google map embedding     (NextJs) ',
 
     },
+     {
+      title: 'Project3',
+      image: '/images/Hero-Img.jpeg',
+      previewLink: 'https://fire-base-auth-seven.vercel.app/',
+  //     codeLink: 'https://github.com/Saadmukhtar94/calculator',
+      Description: '"An Auth System built using Firebase. Ideal for attaching  any existing Website for Auth functionality."',
+    },
     {
       title: 'Project1',
       image: '/images/Hero-Img.jpeg',
@@ -37,13 +44,7 @@ export default function Page() {
   //     codeLink: 'https://github.com/Saadmukhtar94/CRUD',
       Description: '"CRUD-App – a basic interface to create, read, update, and delete data using server-side storage through mock API integration."(NextJs)',
     },
-    {
-      title: 'Project3',
-      image: '/images/Hero-Img.jpeg',
-      previewLink: 'https://calculatorneltify.netlify.app/',
-  //     codeLink: 'https://github.com/Saadmukhtar94/calculator',
-      Description: '"A basic web-based calculator built using JavaScript and jQuery. Ideal for practicing DOM manipulation and event handling."',
-    },
+   
     {
       title: 'Project4',
       image: '/images/Hero-Img.jpeg',
